@@ -22,6 +22,8 @@ find_package(Eigen3 REQUIRED)
 
 add_executable(${PROJECT_NAME}_node src/cpp_exe.cpp)
 
+target_include_directories(${PROJECT_NAME}_node PRIVATE include)
+
 ament_target_dependencies(${PROJECT_NAME}_node
   rclcpp
   cpp_header_lib
