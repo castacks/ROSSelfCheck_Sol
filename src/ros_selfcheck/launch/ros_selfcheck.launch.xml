@@ -1,0 +1,9 @@
+<launch>
+<!-- Top level launch file. Lanch cpp_exe_node from cpp_exe package and py_exe_node from py_exe package. -->
+    <arg name="print_prefix" default="cpp_exe_node: " />
+    <arg name="start_count" default="0" />
+
+    <include file="$(find-pkg-share cpp_exe)/launch/cpp_exe_node.launch.xml" />
+    <include file="$(find-pkg-share py_exe)/launch/py_exe_node.launch.xml" />
+
+</launch>

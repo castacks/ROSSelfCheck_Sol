@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="print_prefix" default="cpp_exe: "/>
+
+    <node pkg="cpp_exe" 
+          exec="cpp_exe_node" 
+          name="cpp_exe_node" 
+          output="screen">
+        <param name="print_prefix" value="$(var print_prefix)" type="str" />
+    </node>
+
+</launch>

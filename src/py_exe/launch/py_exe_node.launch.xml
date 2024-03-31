@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="start_count" default="0"/>
+
+    <node pkg="py_exe" 
+          exec="py_exe" 
+          name="py_exe_node" 
+          output="screen">
+        <param name="start_count" value="$(var start_count)" type="int" />
+    </node>
+
+</launch>

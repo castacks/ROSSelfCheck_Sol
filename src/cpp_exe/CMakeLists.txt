@@ -30,10 +30,7 @@ ament_target_dependencies(${PROJECT_NAME}_node
   cpp_lib
   msg_interfaces
   Eigen3
-  )
-
-install(TARGETS ${PROJECT_NAME}_node
-  DESTINATION lib/${PROJECT_NAME})
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -48,3 +45,11 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+install(TARGETS ${PROJECT_NAME}_node
+  DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)

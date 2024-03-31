@@ -2,7 +2,7 @@ from glob import glob
 import os
 from setuptools import find_packages, setup
 
-package_name = 'py_exe'
+package_name = 'ros_selfcheck'
 
 setup(
     name=package_name,
@@ -18,12 +18,11 @@ setup(
     zip_safe=True,
     maintainer='yaoyuh',
     maintainer_email='yaoyuh@andrew.cmu.edu',
-    description='A python publisher for ROS Skill Self-Check',
+    description='TODO: Package description',
     license='MIT',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'py_exe = py_exe.py_exe:main',
         ],
     },
 )
